@@ -78,4 +78,4 @@ Feel free to download the `app_template.zip` asset to save locally to your proje
 [6]: https://learndjango.com/tutorials/django-best-practices-referencing-user-model "blog: Django Best Practices: Referencing the User Model"
 [7]: https://black.readthedocs.io/en/stable/ "Black: The uncompromising code formatter"
 [8]: https://github.com/GriceTurrble/django-app-template/releases
-[9]: https://github.com/GriceTurrble/django-app-template/releases/download/v0.0.1/app_template.zip
+[9]: https://github.com/GriceTurrble/django-app-template/releases/download/v0.1.0/app_template.zip
