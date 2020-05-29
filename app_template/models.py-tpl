@@ -3,6 +3,7 @@
 ### WARNING ###
 # DO NOT use `django.contrib.auth.models.User` directly.
 # Instead, use `get_user_model`.
+# https://learndjango.com/tutorials/django-best-practices-referencing-user-model
 ###############
 
 
