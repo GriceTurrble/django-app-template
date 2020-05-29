@@ -28,7 +28,7 @@ Thankfully, the `startapp` command takes an optional `--template` argument, whic
   - Files have been formatted with [Black][7] ahead of time: running Black on the newly-created files *should* yield no changes.
 - `apps.py`:
   - Includes an example of the string that should be used in the `INSTALLED_APPS` setting to add the new app.
-  - Adds the `ready` method, which for now simply imports the `signals.py` module to allow its receiver functions to be register on app startup.
+  - Adds the `ready` method, which for now simply imports the `signals.py` module to allow its receiver functions to be registered on app startup.
 - `models.py`:
   - A warning states [not to use Django's built-in `User` model directly][6], but to call `django.contrib.auth.get_user_model`, instead.
   - `get_user_model` is also called at the top level of the module to obtain the `User` class as an example.
