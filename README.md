@@ -5,3 +5,5 @@ Custom app template to use in Django's `startapp` command.
 ## Usage
 
 *TBD*
+
+Let's see what happens.
