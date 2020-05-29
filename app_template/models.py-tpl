@@ -1,9 +1,9 @@
 """Models for `{{ app_name }}` app."""
 
-### WARNING ##############################################
-# DO NOT use `django.contrib.auth.models.User` directly. #
-# Instead, use `get_user_model`.                         #
-##########################################################
+### WARNING ###
+# DO NOT use `django.contrib.auth.models.User` directly.
+# Instead, use `get_user_model`.
+###############
 
 
 from django.contrib.auth import get_user_model

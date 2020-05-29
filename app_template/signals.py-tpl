@@ -1,10 +1,9 @@
 """Signal receivers for `{{ app_name }}` app."""
 
-### WARNING ###############################################
-# If you remove this module, also remove its import from: #
-# `apps.{{ camel_case_app_name }}Config.ready`.           #
-###########################################################
-
+### WARNING ###
+# If you remove this module, also remove its import from:
+# `apps.{{ camel_case_app_name }}Config.ready`.
+###############
 
 from django.dispatch import receiver
 
