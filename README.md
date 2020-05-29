@@ -37,16 +37,30 @@ Thankfully, the `startapp` command takes an optional `--template` argument, whic
 
 ## Usage
 
-1. Navigate to this repo's **Releases** section.
-1. Find the latest release (currently `v0.0.1`).
-1. Copy the download link for the `app_template.zip` asset attached to that release.
-1. Use the URL for this asset when running the `startapp` command, by including a `--template` flag like so:
+See [Django docs for the `startapp` command][1] for details. We'll be using the optional `--template` argument to use this app template in place of Django's default.
+
+You may either download the [`app_template.zip`][9] release asset to use locally, or use the URL to that asset directly in the `startapp` command.
+
+### Option 1: download and use `app_template.zip` locally
+
+1. [Click here][9] to download the latest release asset, saving it wherever you like.
+1. Use the path to this archive in the `--template` argument for the `startapp` management command:
+
+```shell
+$ python manage.py startapp --template path/to/app_template.zip myapp
+```
+
+### Option 2: use the asset URL
+
+1. [Right-click and copy this URL][9], or find it in the **Releases** section of this Repo:
+   1. Navigate to this repo's [Releases][8] section, then find the latest release.
+   1. Find the `app_template.zip` asset attached to the latest release.
+   1. Right-click and copy that asset's link
+1. Use the URL for the asset in the `--template` argument for the `startapp` management command:
 
 ```shell
 $ python manage.py startapp --template https://link/to/app_template.zip myapp
 ```
-
-See [Django docs specific to the `--template` flag][1] for details on how this works.
 
 ## New releases
 
@@ -63,3 +77,5 @@ Feel free to download the `app_template.zip` asset to save locally to your proje
 [5]: https://www.python.org/dev/peps/pep-0257/ "PEP 257 -- Docstring conventions"
 [6]: https://learndjango.com/tutorials/django-best-practices-referencing-user-model "blog: Django Best Practices: Referencing the User Model"
 [7]: https://black.readthedocs.io/en/stable/ "Black: The uncompromising code formatter"
+[8]: https://github.com/GriceTurrble/django-app-template/releases
+[9]: https://github.com/GriceTurrble/django-app-template/releases/download/v0.0.1/app_template.zip
