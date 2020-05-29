@@ -25,6 +25,7 @@ Thankfully, the `startapp` command takes an optional `--template` argument, whic
   - Modules include examples (commented out) for standard objects that might be included and links to interesting documentation.
   - Modules, classes, and functions include basic [PEP 257][5]-compliant docstrings
     - In some projects, I use a pre-commit hook that checks for this. The templated docstrings *should* make any new app pass such a test.
+  - Files have been formatted with [Black][7] ahead of time: running Black on the newly-created files *should* yield no changes.
 - `apps.py`:
   - includes an example of the string that should be used in the `INSTALLED_APPS` setting to add the new app.
   - adds the `ready` method, which for now simply imports the `signals.py` module to allow its receiver functions to be register on app startup.
@@ -61,3 +62,4 @@ Feel free to download the `app_template.zip` asset to save locally to your proje
 [4]: https://docs.djangoproject.com/en/3.0/topics/signals/#connecting-receiver-functions "Django docs: Connecting receiver functions"
 [5]: https://www.python.org/dev/peps/pep-0257/ "PEP 257 -- Docstring conventions"
 [6]: https://learndjango.com/tutorials/django-best-practices-referencing-user-model "blog: Django Best Practices: Referencing the User Model"
+[7]: https://black.readthedocs.io/en/stable/ "Black: The uncompromising code formatter"
