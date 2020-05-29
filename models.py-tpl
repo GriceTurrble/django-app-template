@@ -1,0 +1,20 @@
+"""Models for `{{ app_name }}` app."""
+
+### WARNING ##############################################
+# DO NOT use `django.contrib.auth.models.User` directly. #
+# Instead, use `get_user_model`.                         #
+##########################################################
+
+
+from django.contrib.auth import get_user_model
+
+from django.db import models
+
+User = get_user_model()
+
+
+### EXAMPLE ###
+
+# class MyModel(models.Model):
+#     """My model that does some things."""
+#     ...
