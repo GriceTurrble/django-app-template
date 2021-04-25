@@ -1,6 +1,6 @@
 """App config for `{{ app_name }}` app.
 
-https://docs.djangoproject.com/en/3.0/ref/applications/
+https://docs.djangoproject.com/en/3.2/ref/applications/
 """
 
 # Install this app by adding the following to `INSTALLED_APPS`:
@@ -17,6 +17,7 @@ from django.apps import AppConfig
 class {{ camel_case_app_name }}Config(AppConfig):
     """App config for {{ app_name }}."""
 
+    default_auto_field = "django.db.models.BigAutoField"
     name = "{{ app_name }}"
 
     def ready(self):
