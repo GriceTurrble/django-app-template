@@ -10,7 +10,7 @@ from django.dispatch import receiver
 from django.db.models.signals import post_save
 
 # for all Django signals:
-# https://docs.djangoproject.com/en/3.0/ref/signals/
+# https://docs.djangoproject.com/en/3.2/ref/signals/
 
 ### EXAMPLE ###
 # from .models import MyModel
